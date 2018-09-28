@@ -1,0 +1,279 @@
+/* Player Settings - takes up right side of screen */
+/* Main container for the player */
+#player_big_container {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:white;
+	display:none;
+}
+#player {
+	display:block;
+	width:96%;
+	padding-left:2%;
+	padding-right:2%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	font-size:0;
+}
+	/* Hides the default HTML5 audio player and its controls */
+	#player .player {
+		display:none
+	}
+	/* Top bar in player */
+	#player #player_top {
+		right:0;
+	}
+		#player #player_top #song_back_mobile {
+			background-color:red;
+			color:white;
+			float:left;
+		}
+		#player #player_top #song_back_mobile:hover {
+			cursor:pointer;
+			opacity:1;
+		}
+	/* Player's background = song icon, width 100% */
+	#player .player_background {
+		width:100%;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		z-index: 1;
+		-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+	    filter: blur(5px);
+	    opacity:0.2;
+	}
+	#player .player_container {
+		position:absolute;
+		display:block;
+		height:auto;
+		width:100%;
+		top:75px;
+		bottom:60px;
+		left:0;
+		right:0;
+	}
+		#player .player_container .player_side {
+			width:50%;
+			height:100%;
+			display:inline-block;
+			vertical-align: top;
+			z-index: 2;
+			position:relative;
+		}
+			/* CSS for the song cover photo */
+			#player .player_container .player_left .player_song_icon {
+				display: block;
+				max-height:200px;
+				max-width: 90%;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:20px;
+				margin-top:20px;
+				box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.5);
+			}
+
+			/* CSS for the song's title and artist text */
+			#player .player_container .player_left .player_song_title {
+				display:block;
+				width:100%;
+				text-align: center;
+				margin-bottom:5px;
+				font-size:18px;
+			}
+			#player .player_container .player_left .player_song_artist {
+				display:block;
+				width:100%;
+				text-align: center;
+				font-size:12px;
+			}
+
+
+			/* default CSS for each button in the player - all are set to a height of 30px and are made inline-blocks */
+			#player .player_button {
+				display:inline-block;
+				vertical-align: middle;
+				height:30px;
+			}
+
+			/* hides the pause button of the player as a default */
+			#player .pause {
+				display:none;
+			}
+
+			/* CSS for the container for the time slider,  */
+			#player .time_container {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top:10px;
+				height:25px;
+				font-size:0;
+				text-align: center;
+			}
+
+			#player .time_container .time_slider {
+				display:inline-block;
+				vertical-align: middle;
+				width: 50%;
+				margin-left:15px;
+				margin-right:15px;
+				margin-top:0px;
+				margin-bottom:0px;
+				padding:0;
+			}
+			#player .time_container .time_slider::-webkit-slider-thumb {
+				width: 3px;
+				height: 15px;
+				-webkit-appearance: none;
+				appearance: none;
+				background: url('../assets/top_slider.png');
+			}
+			#player .time_container .time_slider::-moz-range-thumb {
+				width: 3px;
+				height: 15px;
+				background: url('../assets/top_slider.png');
+			}
+			#player .time_container .curTime {
+				display:inline-block;
+				vertical-align: middle;
+				text-align: right;
+				width:15%;
+				font-size:15px;
+			}
+			#player .time_container .duration {
+				display: inline-block;
+				vertical-align: middle;
+				text-align: left;
+				width:15%;
+				font-size:15px;
+			}
+
+			/* CSS for the container for the player controls */
+			#player .player_controls {
+				width:100%;
+				text-align: center;
+				font-size:0px;
+				margin-bottom:20px;
+			}
+
+			#player .volume_container {
+				display:inline-block;
+				vertical-align: middle;
+				width:25%;
+				text-align: right;
+			}
+			#player .volume_image {
+				display:inline-block;
+				vertical-align: middle;
+				height:20px;
+			}
+			#player .volume_container .slider {
+				display:inline-block;
+				vertical-align: middle;
+				width:50px;
+				margin:0;
+				margin-right:10px;
+				padding:0;
+			}
+			#player .player_controls .player_buttons {
+				display:inline-block;
+				vertical-align: center;
+				width:25%;
+			}
+			#player .repeat_container {
+				display:inline-block;
+				vertical-align: middle;
+				width:25%;
+				text-align: left;
+			}
+			#player .repeat_container .repeat_button {
+				height:20px;
+			}
+
+
+			#player .player_container .player_left .player_details_container {
+				width:100%;
+				height:220px;
+				padding-bottom:25px;
+				text-align: center;
+				margin-top:5px;
+				margin-left:auto;
+				margin-right:auto;
+				font-size:12px;
+				overflow-x: hidden;
+				overflow-y:scroll;
+			}
+				#player .player_details_container .player_details_table {
+					width:70%;
+					min-width:250px;
+					margin-left:auto;
+					margin-right:auto;
+				}
+				#player .player_details_container .player_details_table .detail_left {
+					text-align: right;
+					width:48%;
+					padding-right:2%;
+					font-weight: bold;
+				}
+				#player .player_details_container .player_details_table .detail_right {
+					text-align: left;
+					width:48%;
+					padding-left:2%;
+				}
+				#player .player_details_container .player_edit {
+					display:block;
+					background-color: red;
+					color:white;
+					font-size:0.8em;
+					width:150px;
+					height:30px;
+					line-height: 30px;
+					border-radius: 10px;
+					margin-left:auto;
+					margin-right:auto;
+					margin-top:30px;
+				}
+				#player .player_details_container .player_edit:hover {
+					cursor:pointer;
+				}
+
+		#player .player_container .player_right {
+			font-size:12px;
+			text-align: center;
+			height:95%;
+			margin-top:2.5%;
+			margin-bottom:2.5%;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			overflow-wrap:break-word;
+		}
+			#player .player_container .player_right .player_lyrics {
+				margin:0;
+			}
+			#player .player_container .player_right .player_lyrics .current_lyric {
+				font-style:italic;
+				border-top:1px solid rgba(0,0,0,0.2);
+				border-bottom:1px solid rgba(0,0,0,0.2);
+			}
+			#player .player_container .player_right .player_lyrics .lyric_segment {
+				display:block;
+				width:90%;
+				padding-left:5%;
+				padding-right:5%;
+				margin-bottom:15px;
+			}
+			#player .player_container .player_right .player_lyrics .lyric_segment:hover {
+				cursor:pointer;
+				background-color: rgba(0,0,0,0.1);
+			}
+			

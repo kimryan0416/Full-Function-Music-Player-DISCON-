@@ -1,0 +1,181 @@
+#main_top {
+	left:0;
+}
+#main_top #upload_link {
+	float:left;
+	color:red;
+}
+#main_top #song_forward_mobile {
+	background-color:red;
+	color:white;
+	float:right;
+}
+#main_top #song_forward_mobile:hover, #main_top #upload_link:hover {
+	opacity:1;
+	cursor:pointer;
+}
+
+
+
+
+#main_top #top_player {
+	display:inline-block;
+	vertical-align: top;
+	width:auto;
+	height:50px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color: white;
+	text-align: center;
+}
+	#main_top #top_player #player_top_song_icon {
+		height:100%;
+		max-width:100px;
+		display:inline-block;
+		vertical-align: top;
+	}
+	#main_top #top_player #player_top_contents {
+		display:inline-block;
+		vertical-align: top;
+		width:350px;
+		padding-left:10px;
+		padding-right:10px;
+		border-right:1px solid rgba(0,0,0,0.2);
+		margin-right:9px;
+		height:100%;
+		text-align: left;
+	}
+		#main_top #top_player #player_top_contents #player_top_text {
+			height:30px;
+			line-height: 30px;
+			width:100%;
+			display:block;
+		}
+			#main_top #top_player #player_top_text #player_top_song_artist {
+				display:inline-block;
+				vertical-align: top;
+				width:auto;
+				max-width:60px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size:12px;
+				padding-right:10px;
+				border-right:1px solid rgba(0,0,0,0.2);
+				margin-right:9px;
+			}
+			#main_top #top_player #player_top_text #player_top_song_title {
+				display:inline-block;
+				vertical-align: top;
+				width:270px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size:12px;
+			}
+		#main_top #top_player #player_top_contents #player_top_time_container {
+			display:block;
+			height:20px;
+			width:100%;
+		}
+			#main_top #top_player #player_top_time_container .player_top_time_text {
+				display: inline-block;
+				vertical-align: middle;
+				width:40px;
+				height:20px;
+				line-height: 20px;
+				font-size:12px;
+			}
+			#main_top #top_player #player_top_time_container #curTime_top {
+				margin-right:10px;
+				text-align: left;
+			}
+			#main_top #top_player #player_top_time_container #duration_top {
+				margin-left:10px;
+				text-align: right;
+			}
+			#main_top #top_player #player_top_time_container #time_slider_top {
+				width:250px;
+				margin:0;
+				padding:0;
+				height:10px;
+				display:inline-block;
+				vertical-align: middle;
+			}
+			#main_top #top_player #player_top_time_container #time_slider_top::-webkit-slider-thumb {
+				width: 3px;
+			    height: 10px;
+				 -webkit-appearance: none;
+			    appearance: none;
+			    background: url('../assets/top_slider.png');
+			}
+			#main_top #top_player #player_top_time_container #time_slider_top::-moz-range-thumb {
+				width: 3px;
+			    height: 10px;
+				background: url('../assets/top_slider.png');
+			}
+	#main_top #top_player #player_top_extras {
+		display:inline-block;
+		vertical-align: top;
+		height:100%;
+		width:150px;
+		text-align: left;
+	}
+		#main_top #top_player #player_top_extras #player_top_volume_container {
+			display:block;
+			height:25px;
+			width:100%;
+		}
+			#main_top #top_player #player_top_extras #player_top_volume_container #volume_top {
+				display:inline-block;
+				vertical-align: middle;
+				width:70px;
+				height:25px;
+				margin-left:5px;
+				margin-right:5px;
+				padding:0;
+			}
+				#main_top #top_player #player_top_extras #player_top_volume_container #volume_top::-webkit-slider-thumb {
+					width: 3px;
+				    height: 10px;
+					 -webkit-appearance: none;
+				    appearance: none;
+				    background: url('../assets/top_slider.png');
+				}
+				#main_top #top_player #player_top_extras #player_top_volume_container #volume_top::-moz-range-thumb {
+					width: 3px;
+				    height: 10px;
+					background: url('../assets/top_slider.png');
+					border:none;
+				}
+				#main_top #top_player #player_top_extras #player_top_volume_container #volume_image_top {
+					display:inline-block;
+					vertical-align: middle;
+					width:15px;
+					margin-right:5px;
+				}
+				#main_top #top_player #player_top_extras #player_top_volume_container .volume_icon_other {
+					width:20px;
+					display:inline-block;
+					vertical-align: middle;
+					margin-right:5px;
+				}
+			#main_top #top_player #player_top_extras #player_top_controls {
+				display:block;
+				height:25px;
+				width:100%;
+			}
+			#main_top #top_player #player_top_extras #player_top_controls img {
+				height:25px;
+				display:inline-block;
+				vertical-align: middle;
+			}
+			#main_top #top_player #player_top_extras #player_top_controls .pause {
+				display:none;
+			}
+
+
+
+
+
+

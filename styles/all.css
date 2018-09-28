@@ -1,0 +1,236 @@
+@import url("top.css");
+@import url("bottom.css");
+@import url("song_list.css");
+@import url("upload_container.css");
+@import url("song_edit.css");
+@import url("player.css");
+@import url("playlist_create.css");
+
+@font-face {
+    font-family: "Young";
+    src: url(Young.ttf);
+}
+
+html, body {
+	margin:0;
+	font-family: "Young", Verdana, Arial;
+	height:100%;
+	width:100%;
+	overflow-x: hidden;
+	position:relative;
+}
+.error {
+	color:red;
+}
+
+.top {
+	position:absolute;
+	display:block;
+	box-shadow: 0 5px 2px -2px rgba(0,0,0,0.2);
+	background-color:white;
+	z-index: 3;
+	top:0;
+	width:96%;
+	height:60px;
+	padding-left:2%;
+	padding-right:2%;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align: center;
+}
+.top .link {
+	display:inline-block;
+	vertical-align: top;
+	text-align: center;
+	height:38px;
+	line-height: 38px;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	border-radius:10px;
+	font-size:15px;
+	border:1px solid red;
+	opacity:0.5;
+}
+.top .link:hover {
+	cursor:pointer;
+}
+
+
+/* Container on left that holds all the songs and upload container */
+#main_container {
+	width:96%;
+	height:100%;
+	padding-left: 2%;
+	padding-right:2%;
+	font-size:0px;
+	position:relative;
+}
+#main_container #submain {
+	position:absolute;
+	display:block;
+	height:auto;
+	width:100%;
+	top:75px;
+	bottom:60px;
+	left:0;
+	right:0;
+}
+
+
+
+
+
+
+
+/* inside the text container,  each row is its own div called a form_mini_container or a half contianer. This has a font-size of 0 to prevent spacing between inline-elements */
+#main_container #song_edit #song_edit_text_container .form_mini_container {
+	width:100%;
+	font-size:0;
+	margin-bottom:10px;
+}
+#main_container #song_edit #song_edit_text_container .form_mini_half_container {
+	display:inline-block;
+	vertical-align: top;
+	width:45%;
+	margin-right:5%;
+	font-size:0;
+	margin-bottom:10px;
+}
+#main_container #song_edit .upload_input {
+	width:90%;
+	padding:10px;
+	font-size:15px;
+}
+#main_container #song_edit textarea {
+	width:90%;
+	padding:10px;
+	height:70px;
+	font-size:15px;
+}
+#main_container #song_edit #song_edit_lyrics {
+	height:235px;
+	font-size:10px;
+}
+
+#main_container #song_edit #song_edit_submit:hover {
+	cursor:pointer;
+	background-color: rgb(200,200,200);
+}
+#main_container #song_edit #edit_message {
+	background-color: red;
+	color:white;
+	display:none;
+	width:80%;
+	height:30px;
+	line-height: 30px;
+	font-size:12px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+#main_container #song_edit .show_error {
+	display:block !important;
+}
+
+
+
+/* CSS For Song Editing Page */
+/* It's mostly the same as the upload song CSS - only the changes are mentioned below */
+
+
+#main_container #song_edit #song_edit_submit {
+	width: 90%;
+	margin-left:5%;
+	margin-right:5%;
+	height:40px;
+	line-height: 40px;
+	font-size: 20px;
+	border: none;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+	text-align: center;
+	border-radius:20px;
+}
+#main_container #song_edit #cancel_edit {
+	display:block;
+	width:100px;
+	margin-left:5%;
+	margin-bottom:10px;
+	border-radius:20px;
+	text-align: center;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+	padding:10px;
+	background-color: red;
+	color:white;
+	font-size:15px;
+}
+#main_container #song_edit #cancel_edit:hover {
+	cursor:pointer;
+}
+
+
+/* iPhone media query - lanscape & portrait */
+@media only screen and (max-width: 990px) {
+	.album .album_name {
+		font-size:2em;
+	}
+	.song_left, .song_right {
+		border-left:none;
+		margin-left:0px;
+		padding:0;
+		display:block;
+		width:100%;
+	}
+	.song .song_info {
+		width:85%;
+		padding-left:0%;
+		font-size:25px;
+	}
+	.song .song_options_container {
+		width:15%;
+		padding-right:0%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 850px) {
+	#main_top #upload_link {
+		display:none;
+	}
+	#main_top #top_player {
+		float:left;
+	}
+	#main_top #top_player #player_top_contents {
+		width:250px;
+		margin-right:4px;
+	}
+	#main_top #top_player #player_top_text #player_top_song_title {
+		width:170px;
+	}
+	#main_top #top_player #player_top_time_container #time_slider_top {
+		width:150px;
+	}
+	#player .player_container .player_right {
+			font-size:10px;
+	}
+	#song_list .song_options {
+		display:none;
+	}
+	#player .player_details_container .player_edit {
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	#main_top #top_player {
+		float:none;
+	}
+	#main_top #song_forward_mobile {
+		display:none;
+	}
+}
+
+

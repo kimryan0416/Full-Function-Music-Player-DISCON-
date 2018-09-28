@@ -1,0 +1,44 @@
+#top {
+	display:block;
+	width:100%;
+	height:40px;
+	overflow:hidden;
+	box-shadow: 0 5px 2px -2px rgba(0,0,0,0.2);
+	position:fixed;
+	background-color:white;
+	z-index: 3;
+}
+#top #nav {
+	display:block;
+	width:95%;
+	padding-left:2.5%;
+	padding-right:2.5%;
+	height:30px;
+	text-align: center;
+}
+#top .link {
+	display:inline-block;
+	vertical-align: top;
+	height:25px;
+	line-height: 25px;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:100px;
+	border:1px solid white;
+	border-radius: 10px;
+	margin-left:10px;
+	margin-right: 10px;
+}
+#top .link:hover {
+	cursor:pointer;
+}
+#top #upload_link {
+	position:absolute;
+	left:2.5%;
+	border: 1px solid red;
+	color:red;
+}
+#top .nav_opened {
+	background-color:blue !important;
+	color:white !important;
+}

@@ -1,0 +1,62 @@
+#scrolling_mobile {
+	width:100%;
+}
+.scrolling_moved {
+	margin-left:0;
+}
+
+
+/* Container on left that holds all the songs and upload container */
+#main_container {
+	width:70%;
+	float:left;
+	font-size:0px;
+	margin-top:60px;
+}
+/* CSS for the containers for the song lists and the upload container */
+#main_container #upload_container {
+	display:block;
+	font-size:15px;
+	width:95%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-left:2.5%;
+	padding-right:2.5%;
+	height:680px;
+}
+
+#main_container #song_shortcuts {
+	display:inline-block;
+	vertical-align: top;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width:5%;
+	padding-left:2.5%;
+	height:680px;
+	font-size: 10px;
+}
+#main_container #song_list{
+	display:inline-block;
+	vertical-align: top;
+	padding-top:5px;
+	width:87.5%;
+	padding-right:2.5%;
+	padding-left:2.5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height:680px;
+	font-size:15px;
+}
+#main_container #song_shortcuts .song_list_shortcut {
+	display:block;
+	width:90%;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+	height:25px;
+	line-height: 25px;
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#main_container #song_shortcuts .song_list_shortcut:hover {
+	cursor:pointer;
+}

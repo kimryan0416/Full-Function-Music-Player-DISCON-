@@ -1,0 +1,87 @@
+/* Cancel creating playlist button */
+#main_container #playlist_create_main_container #cancel_playlist_create {
+	display:block;
+	width:100px;
+	margin-left:2.5%;
+	margin-bottom:10px;
+	margin-top:60px;
+	border-radius:20px;
+	text-align: center;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+	padding:10px;
+	background-color: red;
+	color:white;
+	font-size:15px;
+}
+
+
+/* This "main container" is the div that contains everything related to playlist creation */
+#main_container #playlist_create_main_container {
+	font-size:0;
+	display:none;
+}
+
+/* Form CSS consists of a box that has round corners and a box shadow; 
+unlike the other two forms, the submit is inside this form's box and 
+not a separate button outside of this box */
+#main_container #playlist_create_form {
+	width:90%;
+	margin-left: auto;
+	margin-right:auto;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+	border-radius:20px;
+	padding:20px;
+}
+
+#main_container #playlist_create_form .playlist_create_container {
+	margin-bottom:20px;
+}
+
+/* All labels for inputs are given a font size since the main container is given a font-size of 0 */
+#main_container #playlist_create_form .label {
+	display:block;
+	width:100%;
+	height:15px;
+	font-size:15px;
+	margin-bottom:10px;
+}
+
+#main_container #playlist_create_form #playlist_create_title {
+	font-size:30px;
+	font-weight: bold;
+	width:95%;
+	padding:10px;
+}
+
+#main_container #playlist_create_form #playlist_create_description {
+	font-size:15px;
+	font-style: italic;
+	width:95%;
+	padding:10px;
+}
+#main_container #playlist_create_form #playlist_create_submit {
+	width: 50%;
+	height:40px;
+	font-size: 20px;
+	border: none;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+	text-align: center;
+	border-radius:20px;
+}
+#main_container #playlist_create_form #playlist_create_submit:hover {
+	cursor:pointer;
+	background-color: rgb(200,200,200);
+}
+#main_container #playlist_create_form .error_message {
+	color:red;
+	display:none;
+	width:100%;
+	height:15px;
+	line-height: 15px;
+	font-style: italic;
+	font-size:12px;
+	margin-top:5px;
+}
+#main_container #playlist_create_form .show_error {
+	display:block !important;
+}
